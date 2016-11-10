@@ -1,0 +1,154 @@
+.page {
+    height: 100%;
+}
+
+
+.panel.left {
+    background: #e5e6e8;
+    padding: 60px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.panel.right {
+    padding: 60px;
+    height: auto;
+    background-color: white;
+}
+
+
+.panel-container {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.content {
+    padding-top: 60px;
+}
+
+
+.intro .panel.left {
+    /*background-image: linear-gradient(*/
+            /*rgba(216, 0, 39, 0.1),*/
+            /*rgba(216, 0, 39, 0.1)*/
+    /*), url("images/portrait.jpg");*/
+    background-image: url("images/portrait.jpg");
+    background-size: cover;
+    background-position: center top;
+    /*background-position: 0px -100px;*/
+    /*background-attachment: fixed;*/
+    /*background-repeat: no-repeat;*/
+}
+
+
+.dots-control {
+    width: 100%;
+    height: 100%;
+}
+
+.owl-dots {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+    margin: 11px;
+    float: right;
+}
+
+.owl-dot {
+    float: left;
+    cursor: pointer;
+}
+
+.owl-dot span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: 0px 10px;
+    opacity: 1;
+    border-radius: 16px;
+    background: white;
+}
+
+.owl-dot.active span, .owl-dot:hover span {
+    background-color: #D80027;
+}
+
+
+.title {
+    padding: 200px 70px 0;
+    color: white;
+}
+
+.highlight {
+    color: #D80027;
+
+    /*background-color:  #D80027;*/
+}
+
+.social-control {
+    margin: 6px 11px;
+    float: left;
+}
+
+.social-icon {
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    color: #D80027;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .panel {
+        height: auto;
+    }
+
+    .panel.left {
+        min-height: 400px;
+        /*width: 100%;*/
+    }
+
+    .intro .panel.left {
+        background-image: url("images/portrait.jpg");
+        background-size: 60%;
+        background-repeat: no-repeat;
+    }
+
+
+    .panel.right {
+        /*width: 100%;*/
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .panel {
+        height: 100%;
+    }
+
+    .panel.left {
+        width: 55%;
+        position: fixed;
+        left: 0;
+    }
+
+    .panel.right {
+        width: 45%;
+        min-height: 100%;
+        position: absolute;
+        right: 0;
+    }
+}
